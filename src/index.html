@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <a>
+                <div id="profile-button" class="clickable" data-paneltype="home" onclick="openPage(this)">
+                    <div>
+                        <img src="./portrait.png" alt="me" width="160" height="160"/>
+                        <br />
+                    </div>
+                    Matt Manoleras
+                    <p class="email-subtitle">matt@mattmanoleras.com</p>
+                </div>
+            </a>
+            <a>
+                <div class="panel-button clickable" onclick="togglePage('experience')">
+                    Experience
+                </div>
+                <div class="panel-button clickable" data-paneltype="education" onclick="openPage(this)">
+                    Education
+                </div>
+                <div class="panel-button clickable" data-paneltype="skills" onclick="openPage(this)">
+                    Skills
+                </div>
+                <div class="panel-button clickable" data-paneltype="projects" onclick="openPage(this)">
+                    Projects
+                </div>
+                <div class="panel-button clickable" data-paneltype="contact" onclick="openPage(this)">
+                    Contact
+                </div>
+            </a>
+        </div>
+        <div class="main-panel">
+            <div id="header-bar">     
+                <div id="header-items"></div>           
+            </div>
+            <div class="editor-panel">
+                <div class="editor-section hidden" id="section-home">
+                    Home section
+                </div>                
+                <div class="editor-section hidden" id="section-experience">
+                    Experience section
+                </div>
+                <div class="editor-section hidden" id="section-education">
+                    Education section
+                </div>
+                <div class="editor-section hidden" id="section-skills">
+                    Skills Section
+                </div>
+                <div class="editor-section hidden" id="section-projects">
+                    Projects section
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
