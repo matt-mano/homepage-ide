@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack watch --mode development --devtool eval-source-map --output-path ./dev"
   },
   "devDependencies": {
     "css-loader": "^6.6.0",
