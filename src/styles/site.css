@@ -90,4 +90,20 @@
 
   .editor-panel {
     z-index: 100;
+    padding: 1rem;  
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .editor-section > h1 {
+    font-family: monospace, monospace !important;
+  }
+
+  .editor-section > h2 {
+    font-family: monospace, monospace;
+  }
+
+  .editor-section > h3 {
+    font-family: monospace, monospace;
+    font-size: 0.8em;
   }
